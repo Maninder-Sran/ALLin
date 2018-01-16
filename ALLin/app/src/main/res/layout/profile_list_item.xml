@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:minHeight="88dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/logo_view"
+        android:layout_width="88dp"
+        android:layout_height="88dp" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/logo_view"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/account_type"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"
+            tools:text="Twitter"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorSecondaryText"
+            tools:text="'@NACI"
+            android:clickable="false"/>
+    </LinearLayout>
+
+</RelativeLayout>
